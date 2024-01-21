@@ -13,15 +13,12 @@ const images = [
   },
 ];
 
-const galleryContainer = document.querySelector(".gallery");
+const galleryContainer = document.querySelector(`.gallery`);
 
 const galleryMarkup = images
   .map(
-    (image) => `
-    <li class="gallery-item">
-      <img src="${image.url}" alt="${image.alt}">
-    </li>
-  `
+    (image) =>
+      `<li class="gallery-item"> <img src="${image.url}" alt="${image.alt}"></img></li>`
   )
   .join("");
 
