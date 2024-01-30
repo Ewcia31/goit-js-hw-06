@@ -9,11 +9,11 @@ loginForm.addEventListener("submit", function (event) {
   if (emailInput.value.trim() === "" || passwordInput.value.trim() === "") {
     alert("Please fill in all fields!");
   } else {
-    console.log(`Email: ${emailInput.value}, Password: ${passwordInput.value}`);
     const form = {
       email: emailInput.value,
       password: passwordInput.value,
     };
+    console.log(form);
     loginForm.reset();
   }
 });
